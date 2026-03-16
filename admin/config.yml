@@ -16,19 +16,15 @@ collections:
           - label: "Hero Title"
             name: "hero_title"
             widget: "string"
-
           - label: "Hero Text"
             name: "hero_text"
             widget: "text"
-
           - label: "Contact Phone"
             name: "contact_phone"
             widget: "string"
-
           - label: "Contact Email"
             name: "contact_email"
             widget: "string"
-
           - label: "Service Area"
             name: "service_area"
             widget: "string"
