@@ -9,9 +9,27 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Homepage"
+      - label: "Homepage Content"
         name: "homepage"
-        file: "index.html"
+        file: "content/home.yml"
         fields:
           - { label: "Hero Title", name: "hero_title", widget: "string" }
           - { label: "Hero Text", name: "hero_text", widget: "text" }
+
+          - { label: "Contact Phone", name: "contact_phone", widget: "string" }
+          - { label: "Contact Email", name: "contact_email", widget: "string" }
+          - { label: "Service Area", name: "service_area", widget: "string" }
+
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Featured Projects"
+            name: "featured_projects"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
