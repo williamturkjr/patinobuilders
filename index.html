@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patino Builders | Luxury Outdoor Construction</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, Helvetica, sans-serif; color: #1f1f1f; background: #f7f7f5; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1200px, 92%); margin: 0 auto; }
+    .btn { display: inline-block; padding: 14px 24px; border-radius: 6px; font-weight: 700; transition: 0.25s ease; }
+    .btn-primary { background: #5d2f8e; color: #fff; }
+    .btn-primary:hover { background: #4a2374; }
+    .btn-secondary { border: 2px solid #fff; color: #fff; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.12); }
+    .section { padding: 80px 0; }
+    .section-title { font-size: 2.2rem; margin-bottom: 14px; color: #1d1d1d; text-align: center; }
+    .section-subtitle { max-width: 760px; margin: 0 auto 45px auto; text-align: center; color: #5f5f5f; font-size: 1.05rem; }
+    .topbar { background: #111; color: #fff; font-size: 0.95rem; padding: 10px 0; }
+    .topbar .container { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .navbar { background: rgba(255,255,255,0.96); border-bottom: 1px solid #e7e7e7; position: sticky; top: 0; z-index: 999; backdrop-filter: blur(8px); }
+    .nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 16px; }
+    .brand img { width: 80px; height: auto; }
+    .brand h1 { font-size: 1.35rem; letter-spacing: 0.4px; color: #181818; }
+    .brand p { font-size: 0.88rem; color: #666; margin-top: 3px; }
+    .nav-links { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+    .nav-links a { font-weight: 600; color: #333; }
+    .nav-links a:hover { color: #5d2f8e; }
+    .hero { min-height: 92vh; background: linear-gradient(rgba(10, 10, 10, 0.52), rgba(10, 10, 10, 0.52)), url('images/stone-fireplace-patio.jpeg') center/cover no-repeat; display: flex; align-items: center; color: #fff; }
+    .hero-content { max-width: 760px; padding: 70px 0; }
+    .eyebrow { display: inline-block; margin-bottom: 16px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px; color: #e5e5e5; }
+    .hero h2 { font-size: clamp(2.4rem, 5vw, 4.7rem); line-height: 1.08; margin-bottom: 18px; }
+    .hero p { font-size: 1.1rem; max-width: 660px; color: #ededed; margin-bottom: 28px; }
+    .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+    .trust-bar { background: #fff; border-bottom: 1px solid #ececec; }
+    .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 26px 0; text-align: center; }
+    .trust-item h3 { font-size: 1.2rem; color: #5d2f8e; margin-bottom: 5px; }
+    .trust-item p { color: #5d5d5d; font-size: 0.96rem; }
+    .services { background: #fff; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .service-card { background: #f8f8f6; border: 1px solid #eceae7; border-radius: 12px; overflow: hidden; transition: 0.25s ease; }
+    .service-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(0,0,0,0.08); }
+    .service-card img { width: 100%; height: 220px; object-fit: cover; }
+    .service-content { padding: 24px; }
+    .service-content h3 { margin-bottom: 10px; font-size: 1.22rem; color: #202020; }
+    .service-content p { color: #5c5c5c; font-size: 0.97rem; }
+    .about-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 38px; align-items: center; }
+    .about-text h3 { font-size: 2rem; margin-bottom: 18px; }
+    .about-text p { margin-bottom: 18px; color: #555; }
+    .about-box { background: #fff; padding: 35px; border-left: 5px solid #5d2f8e; box-shadow: 0 10px 30px rgba(0,0,0,0.06); border-radius: 10px; }
+    .about-box ul { list-style: none; }
+    .about-box li { padding: 10px 0; border-bottom: 1px solid #ececec; color: #444; font-weight: 600; }
+    .about-box li:last-child { border-bottom: none; }
+    .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .feature-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+    .feature-card img { height: 260px; width: 100%; object-fit: cover; }
+    .feature-info { padding: 22px; }
+    .feature-info h3 { margin-bottom: 8px; font-size: 1.18rem; }
+    .feature-info p { color: #5c5c5c; font-size: 0.96rem; }
+    .gallery-section { background: #fff; }
+    .gallery-category { margin-bottom: 54px; }
+    .gallery-category h3 { font-size: 1.6rem; margin-bottom: 8px; color: #1d1d1d; }
+    .gallery-category p { color: #666; margin-bottom: 20px; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .gallery-item { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+    .gallery-item img { width: 100%; height: 360px; object-fit: cover; background: #eee; }
+    .gallery-item.tall img { height: 520px; }
+    .gallery-caption { padding: 16px 18px; color: #444; font-weight: 600; font-size: 0.98rem; }
+    .why { background: #1c1c1c; color: #fff; }
+    .why .section-title, .why .section-subtitle { color: #fff; }
+    .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; max-width: 960px; margin: 0 auto; }
+    .why-item { background: #292929; border-left: 4px solid #5d2f8e; padding: 22px; border-radius: 10px; }
+    .why-item h3 { margin-bottom: 8px; font-size: 1.1rem; }
+    .why-item p { color: #d2d2d2; font-size: 0.96rem; }
+    .cta { background: linear-gradient(135deg, #5d2f8e, #3f2160); color: #fff; text-align: center; }
+    .cta h2 { font-size: 2.2rem; margin-bottom: 14px; }
+    .cta p { max-width: 760px; margin: 0 auto 24px auto; color: #f3f3f3; font-size: 1.05rem; }
+    .contact-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 30px; }
+    .contact-info, .contact-form-wrap { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+    .contact-info h3, .contact-form-wrap h3 { margin-bottom: 16px; font-size: 1.5rem; }
+    .contact-info p { margin-bottom: 12px; color: #555; }
+    .contact-form { display: grid; gap: 14px; }
+    .contact-form input, .contact-form select, .contact-form textarea { width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 0.98rem; font-family: inherit; }
+    .contact-form textarea { min-height: 140px; resize: vertical; }
+    .contact-form button { border: none; cursor: pointer; }
+    .footer { background: #111; color: #d6d6d6; padding: 28px 0; text-align: center; font-size: 0.95rem; }
+    .footer strong { color: #fff; }
+    @media (max-width: 1000px) {
+      .trust-grid, .services-grid, .feature-grid, .why-grid, .about-grid, .contact-grid, .gallery-grid { grid-template-columns: 1fr; }
+      .nav-wrap { flex-direction: column; align-items: flex-start; }
+      .nav-links { gap: 14px; }
+      .hero { min-height: 78vh; }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 60px 0; }
+      .brand img { width: 64px; }
+      .hero h2 { font-size: 2.2rem; }
+      .hero p { font-size: 1rem; }
+      .btn { width: 100%; text-align: center; }
+      .hero-buttons { flex-direction: column; }
+      .gallery-item img, .gallery-item.tall img { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div>Serving Bucks County & surrounding Pennsylvania areas</div>
+      <div>Call Today: (267) 000-0000 | Email: info@patinobuilders.com</div>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <img src="images/logo.png" alt="Patino Builders logo" />
+        <div>
+          <h1>Patino Builders</h1>
+          <p>Powered by Patino Landscape Group</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#featured">Featured Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary" href="#contact">Free Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">Luxury Outdoor Construction</span>
+        <h2>Outdoor Spaces Built With Craftsmanship, Structure, and Style</h2>
+        <p>Patino Builders is the construction division of Patino Landscape Group, specializing in patios, retaining walls, outdoor kitchens, stonework, and high-end outdoor living spaces designed to last.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Request a Free Estimate</a>
+          <a href="#projects" class="btn btn-secondary">View Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item"><h3>Luxury Builds</h3><p>High-end patios, kitchens, fire features, and custom outdoor spaces.</p></div>
+      <div class="trust-item"><h3>PLG Backed</h3><p>Powered by the field experience and professionalism of Patino Landscape Group.</p></div>
+      <div class="trust-item"><h3>Stone & Site Work</h3><p>Masonry, hardscaping, grading, and structural landscape construction.</p></div>
+      <div class="trust-item"><h3>Real Project Photos</h3><p>The work shown below is your actual project portfolio, not stock photography.</p></div>
+    </div>
+  </section>
+
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Built around your actual project portfolio so the site reflects the kind of work Patino Builders wants more of.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="images/outdoor-kitchen.jpeg" alt="Outdoor kitchen by Patino Builders">
+          <div class="service-content"><h3>Outdoor Kitchens</h3><p>Custom built-in kitchens and entertaining spaces with stone veneer, premium finishes, and durable surfaces.</p></div>
+        </div>
+        <div class="service-card">
+          <img src="images/stone-fireplace-patio.jpeg" alt="Stone patio and fireplace by Patino Builders">
+          <div class="service-content"><h3>Patios & Outdoor Living</h3><p>Luxury patios, seating spaces, fireplaces, and gathering areas designed to elevate the way clients use their property.</p></div>
+        </div>
+        <div class="service-card">
+          <img src="images/curved-retaining-wall.jpeg" alt="Retaining wall by Patino Builders">
+          <div class="service-content"><h3>Retaining Walls & Stonework</h3><p>Structural and decorative masonry work that improves grade, function, and overall curb appeal.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h3>Built on Experience. Focused on Quality.</h3>
+        <p>Patino Builders was created as the construction division of Patino Landscape Group to showcase and deliver premium outdoor construction services with the professionalism, field experience, and craftsmanship clients expect from an established team.</p>
+        <p>From bluestone patios and custom walkways to outdoor kitchens, stone fireplaces, retaining walls, and complete courtyard transformations, our goal is to build outdoor spaces that look exceptional and perform for years to come.</p>
+        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+      </div>
+      <div class="about-box">
+        <ul>
+          <li>Custom Patio Construction</li>
+          <li>Outdoor Kitchens & Entertainment Areas</li>
+          <li>Stone Fireplaces & Fire Features</li>
+          <li>Retaining Walls & Masonry</li>
+          <li>Landscape Construction & Site Enhancements</li>
+          <li>Powered by Patino Landscape Group</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Work</h2>
+      <p class="section-subtitle">These are the first three images visitors should see because they immediately position Patino Builders as a high-end outdoor construction brand.</p>
+      <div class="feature-grid">
+        <div class="feature-card"><img src="images/stone-fireplace-patio.jpeg" alt="Stone fireplace patio by Patino Builders"><div class="feature-info"><h3>Luxury Patio & Fireplace</h3><p>Large-format stone patio with a custom masonry fireplace and clean, timeless lines.</p></div></div>
+        <div class="feature-card"><img src="images/outdoor-kitchen.jpeg" alt="Outdoor kitchen by Patino Builders"><div class="feature-info"><h3>Outdoor Kitchen</h3><p>Built-in grilling station with premium countertop and stone veneer finish for upscale outdoor entertaining.</p></div></div>
+        <div class="feature-card"><img src="images/fountain-patio.jpeg" alt="Patio and fountain walkway by Patino Builders"><div class="feature-info"><h3>Formal Hardscape Entry</h3><p>Elegant walkway and stair composition leading to a focal fountain and refined planting design.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title">Project Gallery</h2>
+      <p class="section-subtitle">Organized using your actual photos so you can launch now and rearrange later as the portfolio grows.</p>
+
+      <div class="gallery-category">
+        <h3>Outdoor Living Spaces</h3>
+        <p>High-impact entertaining areas, fire features, and gathering spaces.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item tall"><img src="images/stone-fireplace-patio.jpeg" alt="Stone fireplace patio"><div class="gallery-caption">Stone fireplace patio and luxury outdoor entertaining space</div></div>
+          <div class="gallery-item tall"><img src="images/courtyard-firepit-before-after.jpeg" alt="Courtyard fire pit patio"><div class="gallery-caption">Courtyard fire pit project with before-and-after transformation value</div></div>
+        </div>
+      </div>
+
+      <div class="gallery-category">
+        <h3>Outdoor Kitchens</h3>
+        <p>Dedicated section for one of your strongest high-ticket service photos.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="images/outdoor-kitchen.jpeg" alt="Outdoor kitchen"><div class="gallery-caption">Custom stone outdoor kitchen with built-in grill and premium countertop</div></div>
+          <div class="gallery-item"><img src="images/bluestone-patio-house.jpeg" alt="Bluestone patio near home"><div class="gallery-caption">Bluestone entertaining area that pairs well with kitchen and outdoor living installations</div></div>
+        </div>
+      </div>
+
+      <div class="gallery-category">
+        <h3>Patios & Hardscapes</h3>
+        <p>Walkways, terrace areas, entries, and formal hardscape installations.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="images/fountain-patio.jpeg" alt="Fountain patio walkway"><div class="gallery-caption">Formal stone walkway and stair sequence with centered fountain focal point</div></div>
+          <div class="gallery-item"><img src="images/curved-bluestone-walk.jpeg" alt="Curved bluestone walk"><div class="gallery-caption">Curved bluestone walk framed by detailed planting beds</div></div>
+          <div class="gallery-item"><img src="images/bluestone-patio-house.jpeg" alt="Bluestone patio at stone house"><div class="gallery-caption">Bluestone terrace installation complementing luxury residential architecture</div></div>
+          <div class="gallery-item"><img src="images/garden-brick-walkway.jpeg" alt="Brick garden walkway"><div class="gallery-caption">Brick garden path with layered planting and mature landscape design</div></div>
+        </div>
+      </div>
+
+      <div class="gallery-category">
+        <h3>Retaining Walls & Stonework</h3>
+        <p>Structural and decorative masonry work that adds both function and visual strength.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="images/curved-retaining-wall.jpeg" alt="Curved retaining wall"><div class="gallery-caption">Curved retaining wall with integrated planting bed and clean stone detailing</div></div>
+          <div class="gallery-item"><img src="images/dumpster-enclosure.jpeg" alt="Dumpster enclosure construction"><div class="gallery-caption">Masonry and enclosure construction showing structural project capability</div></div>
+        </div>
+      </div>
+
+      <div class="gallery-category">
+        <h3>Construction & Transformations</h3>
+        <p>Images that show build capability and before-and-after value, not just finished landscape beauty shots.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item tall"><img src="images/firepit-before-after.jpeg" alt="Before and after fire pit project"><div class="gallery-caption">Before-and-after fire feature transformation showing construction depth and finishing quality</div></div>
+          <div class="gallery-item tall"><img src="images/courtyard-firepit-before-after.jpeg" alt="Before and after courtyard patio"><div class="gallery-caption">Courtyard transformation with custom circular fire feature and finished seating layout</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why">
+    <div class="container">
+      <h2 class="section-title">Why Homeowners Choose Patino Builders</h2>
+      <p class="section-subtitle">The site is backed by real project photography and a brand clearly connected to Patino Landscape Group.</p>
+      <div class="why-grid">
+        <div class="why-item"><h3>Powered by PLG</h3><p>Patino Builders benefits from the reputation, field experience, and operational foundation of Patino Landscape Group.</p></div>
+        <div class="why-item"><h3>Real Project Portfolio</h3><p>Your website is built around your own work, which creates more trust than generic stock images ever could.</p></div>
+        <div class="why-item"><h3>Luxury-Oriented Presentation</h3><p>The selected photography emphasizes upscale outdoor living, masonry, and refined hardscape detail.</p></div>
+        <div class="why-item"><h3>Construction Depth</h3><p>Transformation images and structural work photos show clients you can handle more than basic landscaping.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <h2>Ready to Build Something Exceptional?</h2>
+      <p>Whether you're planning a patio, outdoor kitchen, retaining wall, fire feature, or complete outdoor living space, Patino Builders is ready to help bring it to life.</p>
+      <a href="#contact" class="btn btn-secondary">Request Your Free Estimate</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><strong>Patino Builders</strong><br>Powered by Patino Landscape Group</p>
+        <p><strong>Phone:</strong> (267) 000-0000</p>
+        <p><strong>Email:</strong> info@patinobuilders.com</p>
+        <p><strong>Service Area:</strong> Bucks County and surrounding Pennsylvania communities</p>
+        <p>Reach out today to discuss your project. We’ll learn about your goals, review the scope, and schedule an estimate.</p>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h3>Request a Free Estimate</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <input type="email" placeholder="Email Address" required>
+          <select required>
+            <option value="">Project Type</option>
+            <option>Patio Construction</option>
+            <option>Outdoor Kitchen</option>
+            <option>Retaining Wall / Masonry</option>
+            <option>Fire Feature</option>
+            <option>Landscape Construction</option>
+            <option>Other</option>
+          </select>
+          <textarea placeholder="Tell us about your project"></textarea>
+          <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 <strong>Patino Builders</strong> | Powered by Patino Landscape Group</p>
+    </div>
+  </footer>
+</body>
+</html>
