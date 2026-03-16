@@ -1,0 +1,22 @@
+hero_title: "Outdoor Spaces Built With Craftsmanship, Structure, and Style"
+hero_text: "Patino Builders is the construction division of Patino Landscape Group, specializing in patios, retaining walls, outdoor kitchens, stonework, and high-end outdoor living spaces designed to last."
+
+contact_phone: "(267) 000-0000"
+contact_email: "info@patinobuilders.com"
+service_area: "Bucks County and surrounding Pennsylvania communities"
+
+services:
+  - title: "Outdoor Kitchens"
+    description: "Custom built-in kitchens and entertaining spaces with stone veneer, premium finishes, and durable surfaces."
+  - title: "Patios & Outdoor Living"
+    description: "Luxury patios, seating spaces, fireplaces, and gathering areas designed to elevate the way clients use their property."
+  - title: "Retaining Walls & Stonework"
+    description: "Structural and decorative masonry work that improves grade, function, and overall curb appeal."
+
+featured_projects:
+  - title: "Luxury Patio & Fireplace"
+    description: "Large-format stone patio with a custom masonry fireplace and clean, timeless lines."
+  - title: "Outdoor Kitchen"
+    description: "Built-in grilling station with premium countertop and stone veneer finish for upscale outdoor entertaining."
+  - title: "Formal Hardscape Entry"
+    description: "Elegant walkway and stair composition leading to a focal fountain and refined planting design."
