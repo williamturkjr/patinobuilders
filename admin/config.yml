@@ -25,6 +25,27 @@ collections:
               - { label: "Secondary Button Text", name: "secondary_button_text", widget: "string" }
               - { label: "Secondary Button Link", name: "secondary_button_link", widget: "string" }
 
+          - label: "Trust Bar"
+            name: "trust_bar"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Paragraph 1", name: "paragraph_1", widget: "text" }
+              - { label: "Paragraph 2", name: "paragraph_2", widget: "text" }
+              - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Button Link", name: "button_link", widget: "string" }
+              - label: "Checklist"
+                name: "checklist"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
+
           - label: "Contact"
             name: "contact"
             widget: "object"
@@ -62,3 +83,12 @@ collections:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Caption", name: "caption", widget: "text" }
                   - { label: "Image", name: "image", widget: "image" }
+
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Button Link", name: "button_link", widget: "string" }
