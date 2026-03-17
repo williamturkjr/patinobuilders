@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: williamturkjr/patinobuilders
   branch: main
 
 media_folder: "images"
