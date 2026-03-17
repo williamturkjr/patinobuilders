@@ -166,12 +166,7 @@
   </section>
 
   <section class="trust-bar">
-    <div class="container trust-grid">
-      <div class="trust-item"><h3>Luxury Builds</h3><p>High-end patios, kitchens, fire features, and custom outdoor spaces.</p></div>
-      <div class="trust-item"><h3>PLG Backed</h3><p>Powered by the field experience and professionalism of Patino Landscape Group.</p></div>
-      <div class="trust-item"><h3>Stone & Site Work</h3><p>Masonry, hardscaping, grading, and structural landscape construction.</p></div>
-      <div class="trust-item"><h3>Real Project Photos</h3><p>The work shown below is your actual project portfolio, not stock photography.</p></div>
-    </div>
+    <div class="container trust-grid" id="trust-bar-grid"></div>
   </section>
 
   <section id="services" class="section services">
@@ -185,20 +180,13 @@
   <section id="about" class="section">
     <div class="container about-grid">
       <div class="about-text">
-        <h3>Built on Experience. Focused on Quality.</h3>
-        <p>Patino Builders was created as the construction division of Patino Landscape Group to showcase and deliver premium outdoor construction services with the professionalism, field experience, and craftsmanship clients expect from an established team.</p>
-        <p>From bluestone patios and custom walkways to outdoor kitchens, stone fireplaces, retaining walls, and complete courtyard transformations, our goal is to build outdoor spaces that look exceptional and perform for years to come.</p>
-        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+        <h3 id="about-title">Built on Experience. Focused on Quality.</h3>
+        <p id="about-paragraph-1">Patino Builders was created as the construction division of Patino Landscape Group to showcase and deliver premium outdoor construction services with the professionalism, field experience, and craftsmanship clients expect from an established team.</p>
+        <p id="about-paragraph-2">From bluestone patios and custom walkways to outdoor kitchens, stone fireplaces, retaining walls, and complete courtyard transformations, our goal is to build outdoor spaces that look exceptional and perform for years to come.</p>
+        <a id="about-button" href="#contact" class="btn btn-primary">Start Your Project</a>
       </div>
       <div class="about-box">
-        <ul>
-          <li>Custom Patio Construction</li>
-          <li>Outdoor Kitchens & Entertainment Areas</li>
-          <li>Stone Fireplaces & Fire Features</li>
-          <li>Retaining Walls & Masonry</li>
-          <li>Landscape Construction & Site Enhancements</li>
-          <li>Powered by Patino Landscape Group</li>
-        </ul>
+        <ul id="about-checklist"></ul>
       </div>
     </div>
   </section>
@@ -234,9 +222,9 @@
 
   <section class="section cta">
     <div class="container">
-      <h2>Ready to Build Something Exceptional?</h2>
-      <p>Whether you're planning a patio, outdoor kitchen, retaining wall, fire feature, or complete outdoor living space, Patino Builders is ready to help bring it to life.</p>
-      <a href="#contact" class="btn btn-secondary">Request Your Free Estimate</a>
+      <h2 id="cta-title">Ready to Build Something Exceptional?</h2>
+      <p id="cta-text">Whether you're planning a patio, outdoor kitchen, retaining wall, fire feature, or complete outdoor living space, Patino Builders is ready to help bring it to life.</p>
+      <a id="cta-button" href="#contact" class="btn btn-secondary">Request Your Free Estimate</a>
     </div>
   </section>
 
@@ -311,6 +299,39 @@
           }
         }
 
+        if (Array.isArray(data.trust_bar)) {
+          const trustBarGrid = document.getElementById('trust-bar-grid');
+          if (trustBarGrid) {
+            trustBarGrid.innerHTML = data.trust_bar.map(item => `
+              <div class="trust-item">
+                <h3>${item.title}</h3>
+                <p>${item.text}</p>
+              </div>
+            `).join('');
+          }
+        }
+
+        if (data.about) {
+          const aboutTitle = document.getElementById('about-title');
+          const aboutParagraph1 = document.getElementById('about-paragraph-1');
+          const aboutParagraph2 = document.getElementById('about-paragraph-2');
+          const aboutButton = document.getElementById('about-button');
+          const aboutChecklist = document.getElementById('about-checklist');
+
+          if (aboutTitle) aboutTitle.textContent = data.about.title || '';
+          if (aboutParagraph1) aboutParagraph1.textContent = data.about.paragraph_1 || '';
+          if (aboutParagraph2) aboutParagraph2.textContent = data.about.paragraph_2 || '';
+
+          if (aboutButton) {
+            aboutButton.textContent = data.about.button_text || 'Start Your Project';
+            aboutButton.href = data.about.button_link || '#contact';
+          }
+
+          if (aboutChecklist && Array.isArray(data.about.checklist)) {
+            aboutChecklist.innerHTML = data.about.checklist.map(item => `<li>${item}</li>`).join('');
+          }
+        }
+
         if (data.contact) {
           const phone = document.getElementById('contact-phone');
           const email = document.getElementById('contact-email');
@@ -368,6 +389,19 @@
                 </div>
               </div>
             `).join('');
+          }
+        }
+
+        if (data.cta) {
+          const ctaTitle = document.getElementById('cta-title');
+          const ctaText = document.getElementById('cta-text');
+          const ctaButton = document.getElementById('cta-button');
+
+          if (ctaTitle) ctaTitle.textContent = data.cta.title || '';
+          if (ctaText) ctaText.textContent = data.cta.text || '';
+          if (ctaButton) {
+            ctaButton.textContent = data.cta.button_text || 'Request Your Free Estimate';
+            ctaButton.href = data.cta.button_link || '#contact';
           }
         }
 
