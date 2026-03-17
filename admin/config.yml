@@ -6,25 +6,59 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "site_content"
+    label: "Site Content"
     files:
-      - label: "Homepage Content"
+      - label: "Homepage"
         name: "homepage"
         file: "content/home.yml"
         fields:
-          - label: "Hero Title"
-            name: "hero_title"
-            widget: "string"
-          - label: "Hero Text"
-            name: "hero_text"
-            widget: "text"
-          - label: "Contact Phone"
-            name: "contact_phone"
-            widget: "string"
-          - label: "Contact Email"
-            name: "contact_email"
-            widget: "string"
-          - label: "Service Area"
-            name: "service_area"
-            widget: "string"
+          - label: "Homepage"
+            name: "homepage"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Primary Button Text", name: "primary_button_text", widget: "string" }
+              - { label: "Primary Button Link", name: "primary_button_link", widget: "string" }
+              - { label: "Secondary Button Text", name: "secondary_button_text", widget: "string" }
+              - { label: "Secondary Button Link", name: "secondary_button_link", widget: "string" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Service Area", name: "service_area", widget: "string" }
+
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+
+          - label: "Featured Projects"
+            name: "featured_projects"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+
+          - label: "Project Gallery"
+            name: "project_gallery"
+            widget: "list"
+            fields:
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Caption", name: "caption", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
