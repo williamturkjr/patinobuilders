@@ -1,10 +1,3 @@
-hero_title: Outdoor Spaces Built With Craftsmanship, Structure, and Style
-hero_text: Patino Builders is the construction division of Patino Landscape
-  Group, specializing in patios, retaining walls, outdoor kitchens, stonework,
-  and high-end outdoor living spaces designed to last.
-contact_phone: (215) 370-8636
-contact_email: william@patinogroup.com
-service_area: Bucks County and surrounding Pennsylvania communities
 homepage:
   eyebrow: "Luxury Outdoor Construction"
   title: "Outdoor Spaces Built With Craftsmanship, Structure, and Style"
@@ -14,80 +7,120 @@ homepage:
   secondary_button_text: "View Our Work"
   secondary_button_link: "#projects"
 
+trust_bar:
+  - title: "Luxury Builds"
+    text: "High-end patios, kitchens, fire features, and custom outdoor spaces."
+  - title: "PLG Backed"
+    text: "Powered by the field experience and professionalism of Patino Landscape Group."
+  - title: "Stone & Site Work"
+    text: "Masonry, hardscaping, grading, and structural landscape construction."
+  - title: "Real Project Photos"
+    text: "The work shown below is your actual project portfolio, not stock photography."
+
+about:
+  title: "Built on Experience. Focused on Quality."
+  paragraph_1: "Patino Builders was created as the construction division of Patino Landscape Group to showcase and deliver premium outdoor construction services with the professionalism, field experience, and craftsmanship clients expect from an established team."
+  paragraph_2: "From bluestone patios and custom walkways to outdoor kitchens, stone fireplaces, retaining walls, and complete courtyard transformations, our goal is to build outdoor spaces that look exceptional and perform for years to come."
+  button_text: "Start Your Project"
+  button_link: "#contact"
+  checklist:
+    - "Custom Patio Construction"
+    - "Outdoor Kitchens & Entertainment Areas"
+    - "Stone Fireplaces & Fire Features"
+    - "Retaining Walls & Masonry"
+    - "Landscape Construction & Site Enhancements"
+    - "Powered by Patino Landscape Group"
+
 contact:
-  phone: "(267) 000-0000"
-  email: "info@patinobuilders.com"
+  phone: "(215) 370-8636"
+  email: "william@patinogroup.com"
   service_area: "Bucks County and surrounding Pennsylvania communities"
 
 services:
   - title: "Outdoor Kitchens"
-    description: "Custom built-in kitchens and entertaining spaces with stone veneer, premium finishes, and durable surfaces."
+    description: "Custom built-in kitchens and entertaining spaces designed with premium finishes, durable materials, and a clean, high-end appearance for outdoor living."
     image: "/images/outdoor-kitchen.jpeg"
 
   - title: "Patios & Outdoor Living"
-    description: "Luxury patios, seating spaces, fireplaces, and gathering areas designed to elevate the way clients use their property."
+    description: "Luxury patios, gathering spaces, fireplaces, and hardscape layouts built to elevate the way clients enjoy and use their property."
     image: "/images/stone-fireplace-patio.jpeg"
 
   - title: "Retaining Walls & Stonework"
-    description: "Structural and decorative masonry work that improves grade, function, and overall curb appeal."
+    description: "Structural and decorative masonry work that improves grade, supports the landscape, and adds lasting visual appeal."
     image: "/images/curved-retaining-wall.jpeg"
 
 featured_projects:
   - title: "Luxury Patio & Fireplace"
-    description: "Large-format stone patio with a custom masonry fireplace and clean, timeless lines."
+    description: "A high-end outdoor living space featuring large-format stonework, custom masonry, and a timeless finished look."
     image: "/images/stone-fireplace-patio.jpeg"
 
   - title: "Outdoor Kitchen"
-    description: "Built-in grilling station with premium countertop and stone veneer finish for upscale outdoor entertaining."
+    description: "Built-in grilling and entertaining space with premium countertop surfaces and clean stone veneer detailing."
     image: "/images/outdoor-kitchen.jpeg"
 
   - title: "Formal Hardscape Entry"
-    description: "Elegant walkway and stair composition leading to a focal fountain and refined planting design."
+    description: "Elegant walkway and stair composition centered around focal-point design and refined landscape structure."
     image: "/images/fountain-patio.jpeg"
 
 project_gallery:
   - category: "Outdoor Living Spaces"
-    description: "High-impact entertaining areas, fire features, and gathering spaces."
+    description: "High-impact entertaining areas, fire features, and custom gathering spaces designed for comfort, use, and curb appeal."
     items:
-      - title: "Stone fireplace patio"
-        caption: "Stone fireplace patio and luxury outdoor entertaining space"
+      - title: "Stone Fireplace Patio"
+        caption: "Stone fireplace patio and luxury outdoor entertaining space with clean hardscape lines and premium finishes."
         image: "/images/stone-fireplace-patio.jpeg"
-      - title: "Courtyard fire pit transformation"
-        caption: "Courtyard fire pit project with before-and-after transformation value"
+      - title: "Courtyard Fire Pit Transformation"
+        caption: "Courtyard fire pit project showing transformation value, masonry detail, and upgraded outdoor living design."
         image: "/images/courtyard-firepit-before-after.jpeg"
 
   - category: "Outdoor Kitchens"
-    description: "Dedicated section for one of your strongest high-ticket service photos."
+    description: "Dedicated entertaining spaces built to combine function, durability, and a luxury outdoor lifestyle."
     items:
-      - title: "Custom outdoor kitchen"
-        caption: "Custom stone outdoor kitchen with built-in grill and premium countertop"
+      - title: "Custom Outdoor Kitchen"
+        caption: "Custom stone outdoor kitchen with built-in grill, premium countertop, and high-end outdoor entertaining appeal."
         image: "/images/outdoor-kitchen.jpeg"
-      - title: "Bluestone patio near home"
-        caption: "Bluestone entertaining area that pairs well with kitchen and outdoor living installations"
+      - title: "Bluestone Entertaining Area"
+        caption: "Bluestone hardscape area that pairs naturally with outdoor kitchens, seating spaces, and luxury backyard layouts."
         image: "/images/bluestone-patio-house.jpeg"
 
   - category: "Patios & Hardscapes"
-    description: "Walkways, terrace areas, entries, and formal hardscape installations."
+    description: "Walkways, terraces, entries, and formal hardscape installations that add structure and elegance to the property."
     items:
-      - title: "Fountain patio walkway"
-        caption: "Formal stone walkway and stair sequence with centered fountain focal point"
+      - title: "Fountain Patio Walkway"
+        caption: "Formal stone walkway and stair sequence with centered fountain focal point and strong visual symmetry."
         image: "/images/fountain-patio.jpeg"
-      - title: "Curved bluestone walk"
-        caption: "Curved bluestone walk framed by detailed planting beds"
+      - title: "Curved Bluestone Walk"
+        caption: "Curved bluestone walk framed by detailed planting beds and refined landscape transitions."
         image: "/images/curved-bluestone-walk.jpeg"
-      - title: "Bluestone terrace"
-        caption: "Bluestone terrace installation complementing luxury residential architecture"
+      - title: "Bluestone Terrace"
+        caption: "Bluestone terrace installation complementing luxury residential architecture and outdoor living design."
         image: "/images/bluestone-patio-house.jpeg"
-      - title: "Brick garden walkway"
-        caption: "Brick garden path with layered planting and mature landscape design"
+      - title: "Brick Garden Walkway"
+        caption: "Brick garden path layered with mature planting and classic landscape design detail."
         image: "/images/garden-brick-walkway.jpeg"
 
   - category: "Retaining Walls & Stonework"
-    description: "Structural and decorative masonry work that adds both function and visual strength."
+    description: "Structural and decorative masonry projects that combine function, support, and strong visual presentation."
     items:
-      - title: "Curved retaining wall"
-        caption: "Curved retaining wall with integrated planting bed and clean stone detailing"
+      - title: "Curved Retaining Wall"
+        caption: "Curved retaining wall with integrated planting bed and clean stone detailing for support and aesthetics."
         image: "/images/curved-retaining-wall.jpeg"
-      - title: "Dumpster enclosure"
-        caption: "Masonry and enclosure construction showing structural project capability"
+      - title: "Dumpster Enclosure"
+        caption: "Masonry and enclosure construction demonstrating structural capability and finished project strength."
         image: "/images/dumpster-enclosure.jpeg"
+
+  - category: "Construction & Transformations"
+    description: "Projects that highlight build depth, before-and-after value, and the ability to handle larger-scale outdoor transformations."
+    items:
+      - title: "Fire Pit Before & After"
+        caption: "Before-and-after fire feature transformation showing construction depth, material quality, and finished outdoor appeal."
+        image: "/images/firepit-before-after.jpeg"
+      - title: "Courtyard Before & After"
+        caption: "Courtyard transformation with custom circular fire feature and a finished layout built for outdoor use and visual impact."
+        image: "/images/courtyard-firepit-before-after.jpeg"
+
+cta:
+  title: "Ready to Build Something Exceptional?"
+  text: "Whether you're planning a patio, outdoor kitchen, retaining wall, fire feature, or complete outdoor living space, Patino Builders is ready to help bring it to life."
+  button_text: "Request Your Free Estimate"
+  button_link: "#contact"
