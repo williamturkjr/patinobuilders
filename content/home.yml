@@ -84,30 +84,6 @@ featured_projects:
     description: "An organized, design-forward path layout built around symmetry, planting, and a fountain centerpiece."
     image: "/images/Patino (19).jpeg"
 
-    - title: Land Clearing
-  description: Full-service land clearing to prepare your property for construction, expansion, or landscape transformation.
-  image: https://images.unsplash.com/photo-1599707367072-cd6ada2bc375
-
-- title: Excavation & Site Work
-  description: Precision excavation for patios, foundations, drainage systems, and full outdoor builds.
-  image: https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc
-
-- title: Grading & Site Preparation
-  description: Professional grading and site preparation to ensure proper drainage and stability.
-  image: https://images.unsplash.com/photo-1600585154340-be6161a56a0c
-
-- title: Driveway Installation
-  description: Custom driveway installations designed for durability and curb appeal.
-  image: https://images.unsplash.com/photo-1604014238170-4def1e4e6fcf
-
-- title: Full Backyard Transformations
-  description: Complete backyard design and build packages including patios, fire features, and outdoor living spaces.
-  image: https://images.unsplash.com/photo-1591824438708-ce405f36ba3d
-
-- title: Front Yard Curb Appeal Packages
-  description: Elevate your home’s first impression with custom front yard design and entry features.
-  image: https://images.unsplash.com/photo-1600607687644-c7171b42498f
-
 gallery_categories:
   - category: "Outdoor Living"
     description: "High-end outdoor environments built for gathering, relaxation, and visual impact."
