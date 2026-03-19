@@ -1263,10 +1263,17 @@ Projects typically range from $15,000 – $150,000+ depending on scope.
           document.getElementById('services-grid').innerHTML = data.services.map(item => `
             <div class="card service-card">
               <img src="${item.image}" alt="${item.title}">
-              <div class="card-body">
-                <h3>${item.title}</h3>
-                <p>${item.description}</p>
-              </div>
+            <div class="card-body">
+  <h3>${item.title}</h3>
+  <p>${item.description}</p>
+
+  ${item.link ? `
+    <a href="${item.link}" class="btn btn-secondary" style="margin-top:10px; display:inline-block;">
+      Learn More
+    </a>
+  ` : ''}
+
+</div>
             </div>
           `).join('');
         }
