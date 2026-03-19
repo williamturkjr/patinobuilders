@@ -910,9 +910,47 @@
     grid-template-columns: 1fr;
   }
 }
+  /* STICKY CTA BAR */
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.sticky-cta a {
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: all 0.25s ease;
+}
+
+.cta-call {
+  background: #000;
+  color: #fff;
+}
+
+.cta-estimate {
+  background: #c9b08b;
+  color: #000;
+}
+
+.sticky-cta a:hover {
+  transform: translateY(-2px);
+}  
   </style>
 </head>
 <body>
+  <div class="sticky-cta">
+  <a href="tel:12153708636" class="cta-call">📞 Call Now</a>
+  <a href="#contact" class="cta-estimate">Request Estimate</a>
+</div>
   <div class="topbar">
     <div class="container">
       <div id="topbar-area">Serving Bucks County & surrounding Pennsylvania communities</div>
@@ -947,6 +985,9 @@
         <span class="eyebrow" id="hero-eyebrow">Luxury Outdoor Construction</span>
         <h2 id="hero-title">Luxury Outdoor Spaces Built With Structure, Craftsmanship, and Presence</h2>
         <p id="hero-text">Patino Builders designs and builds premium outdoor living environments for clients who want more than a basic hardscape.</p>
+        <p style="margin-top:10px; font-weight:600; color:#444;">
+Projects typically range from $15,000 – $150,000+ depending on scope.
+</p>
 
         <div class="hero-actions">
           <a id="hero-primary-btn" class="btn btn-primary" href="#contact">Request a Free Estimate</a>
@@ -954,11 +995,11 @@
         </div>
 
         <div class="hero-points">
-          <div class="hero-point">Premium craftsmanship and material selection</div>
-          <div class="hero-point">Luxury patios, fire features, walls, and fencing</div>
-          <div class="hero-point">Real project photography from actual builds</div>
-          <div class="hero-point">Serving Bucks County and surrounding communities</div>
-        </div>
+  <div class="hero-point">✔ 40+ Skilled Crew Members</div>
+  <div class="hero-point">✔ $3M+ Annual Project Volume</div>
+  <div class="hero-point">✔ Full Fleet of Trucks & Equipment</div>
+  <div class="hero-point">✔ Serving Bucks County & Tri-State Area</div>
+</div>
       </div>
     </div>
   </section>
@@ -1003,6 +1044,14 @@
       </div>
 
     </div>
+    <div style="text-align:center; margin-top:40px;">
+  <p style="font-size:18px; font-weight:600;">
+    Seen something you like? Let’s build yours.
+  </p>
+  <a href="#contact" class="btn btn-primary" style="margin-top:15px; display:inline-block;">
+    Request Your Estimate
+  </a>
+</div>
 
   </div>
 </section>
