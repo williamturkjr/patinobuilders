@@ -46,6 +46,7 @@ services:
   - title: "Patios & Outdoor Living"
     description: "Large-format stone patios, entertaining spaces, and outdoor environments built to elevate how the property is used."
     image: "/images/Patino (29).jpeg"
+    link: "/patio-bucks-county.html"
 
   - title: "Fire Features"
     description: "Custom fire pits and focal gathering spaces that anchor the project and create a stronger visual statement."
