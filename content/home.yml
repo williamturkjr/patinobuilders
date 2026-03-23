@@ -51,10 +51,12 @@ services:
   - title: "Fire Features"
     description: "Custom fire pits and focal gathering spaces that anchor the project and create a stronger visual statement."
     image: "/images/Patino (3).jpeg"
+    link: "/fire-features-bucks-county.html"
 
   - title: "Walkways & Entry Sequences"
     description: "Elegant path systems, formal entry layouts, and circulation elements that bring order and presence to the site."
     image: "/images/Patino (19).jpeg"
+    link: "/walkways-entry-sequences-bucks-county.html"
 
   - title: "Retaining Walls & Masonry"
     description: "Structural and decorative stonework that solves grade, frames space, and strengthens the finished design."
@@ -64,10 +66,12 @@ services:
   - title: "Privacy Fencing & Enclosures"
     description: "Wood fencing and screening solutions that clean up difficult spaces and improve privacy with a finished look."
     image: "/images/Patino (24).jpeg"
+    link: "/privacy-fencing-bucks-county.html"
 
   - title: "Landscape Construction"
     description: "Construction-driven enhancements that tie hardscape, planting, grading, and site details together."
     image: "/images/Patino (10).jpeg"
+    link: "/landscape-construction-bucks-county.html"
 
   - title: "Land Clearing"
     description: "Full-service land clearing to prepare properties for construction, expansion, or large-scale outdoor projects."
