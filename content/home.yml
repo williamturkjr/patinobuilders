@@ -92,6 +92,7 @@ services:
   - title: "Front Yard Curb Appeal Packages"
     description: "Custom front yard redesigns including walkways, entry features, planting, and lighting."
     image: "/images/front yard.webp"
+    link: "/front-yard-curb-appeal-bucks-county.html"
 
 featured_projects:
   - title: "Luxury Fireplace Patio"
