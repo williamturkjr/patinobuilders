@@ -75,6 +75,7 @@ services:
   - title: "Excavation, Grading & Site Preparation"
     description: "Complete site work including excavation, grading, and preparation to ensure proper drainage, structure, and long-term performance."
     image: "/images/site excavation.jpg"
+    link: "/excavation-bucks-county.html"
 
   - title: "Driveway Installation"
     description: "Custom driveway installations built for durability, clean layout, and strong curb appeal."
