@@ -1266,7 +1266,13 @@ if (Array.isArray(data.services)) {
       <div class="card-body">
         <h3>${item.title}</h3>
         <p>${item.description}</p>
-        ${item.link ? `<a href="${item.link}" class="btn btn-primary" style="margin-top:12px; display:inline-block;">Learn More</a>` : ''}
+
+        ${item.link ? `
+          <a href="${item.link}" class="btn btn-primary" style="margin-top:12px; display:inline-block;">
+            Learn More
+          </a>
+        ` : ''}
+
       </div>
     </div>
   `).join('');
