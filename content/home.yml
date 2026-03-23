@@ -59,6 +59,7 @@ services:
   - title: "Retaining Walls & Masonry"
     description: "Structural and decorative stonework that solves grade, frames space, and strengthens the finished design."
     image: "/images/Patino (22).jpeg"
+    link: "/retaining-walls-bucks-county.html"
 
   - title: "Privacy Fencing & Enclosures"
     description: "Wood fencing and screening solutions that clean up difficult spaces and improve privacy with a finished look."
