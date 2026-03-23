@@ -87,6 +87,7 @@ services:
   - title: "Full Backyard Transformations"
     description: "Complete outdoor living packages including patios, fire features, layout design, and full property integration."
     image: "/images/backyard remodel.jpg"
+    link: "/full-backyard-transformations-bucks-county.html"
 
   - title: "Front Yard Curb Appeal Packages"
     description: "Custom front yard redesigns including walkways, entry features, planting, and lighting."
