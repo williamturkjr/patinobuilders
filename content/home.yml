@@ -72,6 +72,7 @@ services:
   - title: "Land Clearing"
     description: "Full-service land clearing to prepare properties for construction, expansion, or large-scale outdoor projects."
     image: "/images/land clearing.jpg"
+    link: "/land-clearing-bucks-county.html"
 
   - title: "Excavation, Grading & Site Preparation"
     description: "Complete site work including excavation, grading, and preparation to ensure proper drainage, structure, and long-term performance."
